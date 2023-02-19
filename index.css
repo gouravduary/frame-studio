@@ -30,7 +30,8 @@ nav{
     height: 40px;
     width: 100%;
     box-shadow: 0 2px 3px #ccc;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 99999;
     background: #fff;
 }
