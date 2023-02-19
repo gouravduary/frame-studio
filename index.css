@@ -18,7 +18,7 @@
 #preloader{
   height: 100vh;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@ nav{
     box-shadow: 0 2px 3px #ccc;
     position: sticky;
     top: 0;
-    z-index: 99999;
+    z-index: 999;
     background: #fff;
 }
 nav .container{
