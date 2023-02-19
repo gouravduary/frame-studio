@@ -33,12 +33,12 @@
   <div id="preloader" class="center">
     <img src="logo.png" alt="">
     <script>
-      $(document).ready(function(){
-        $("body").css("overflow-y","hidden");
+      $("body").css("overflow","hidden");
+      $(function(){
         setTimeout(function(){ 
-          $("#preloader").fadeOut(1500);
-          $("body").css("overflow-y","scroll")
-        },3000)
+          $("#preloader").css("display","none");
+          $("body").css("overflow","scroll");
+        },2000)
       })
     </script>
   </div>
