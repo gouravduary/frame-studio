@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frame Studio</title>
+  
+  <!-- FONTAWESOMW -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- CUSTOM CSS-->
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+
+<body>
+  
+  <script> 
+  // RIGHT CLICK DISABLED
+    $(document).ready(function(){
+      $("*").contextmenu(function(){
+        return false;
+      });
+    });
+  </script>
+  
+  
+  <!--#### PRELOADER ####-->
+  <div id="preloader" class="center">
+    <img src="logo.png" alt="">
+    <script>
+      window.addEventListener('load',function(){
+        var loader = document.getElementById('preloader');
+        loader.style.display = 'none';
+      });
+    </script>
+  </div>
+    
+    
+  <!--#### NAVBAR ####-->
+  <nav class="center">
+    <div class="container">
+      <div class="hamburger"><i class="fa-solid fa-burger"></i></div>
+      <div class="logo"><img src="logo.png" alt="Logo"></div>
+    </div>
+    <div class="list">
+      <ul>
+        <a href="about.html"><li>ABOUT</li></a>
+        <a href="#"><li>DESIGN</li></a>
+        <a href="#"><li>PHOTOGRAPHY</li></a>
+        <a href="#"><li>CONTACT</li></a>
+      </ul>
+    </div>
+    <!-- CUSTOM JQUERY -->
+      <script>
+      $(document).ready(function(){
+        $(".hamburger").click(function(){
+          $("nav .list").slideToggle("slow");
+        });
+      });
+    </script>
+  </nav>
+    
+  <!--#### CATEGORIES ####-->
+  <div class="categories">
+    <a href="">
+      <div class="list">
+        <div class="image">
+          <img src="./img/cat-web.png" alt="Web Design">
+        </div>
+        <div class="text">Web Design</div>
+      </div>
+    </a>
+    <a href="">
+      <div class="list">
+        <div class="image">
+          <img src="./img//cat-bnd.png" alt="Branding">
+        </div>
+        <div class="text">Branding</div>
+      </div>
+    </a>
+    <a href="">
+      <div class="list">
+        <div class="image">
+          <img src="./img/cat-pack.png" alt="Packaging">
+        </div>
+        <div class="text">Packaging</div>
+      </div>
+    </a>
+    <a href="">
+      <div class="list">
+        <div class="image">
+          <img src="./img/cat-ill.png" alt="Illustration">
+        </div>
+        <div class="text">Illustration</div>
+      </div>
+    </a>
+    <a href="">
+      <div class="list">
+        <div class="image">
+          <img src="./img/cat-typo.png" alt="Typography">
+        </div>
+        <div class="text">Typography</div>
+      </div>
+    </a>
+    <a href="">
+      <div class="list">
+        <div class="image">
+          <img src="./img/cat-grp.png" alt="Graphics">
+        </div>
+        <div class="text">Graphics</div>
+      </div>
+    </a>
+  </div>
+  
+  
+  <div class="projects">
+    <a href="item.html">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="item">
+        <img src="logo.png" alt="">
+        <div class="text">DESIGN</div>
+      </div>
+    </a>
+  </div>
+  
+  
+</body>
+</html>

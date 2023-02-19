@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+
+    <link rel="stylesheet" href="item-style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+  <script> 
+  // RIGHT CLICK DISABLED
+    $(document).ready(function(){
+      $("*").contextmenu(function(){
+        return false;
+      });
+    });
+  </script>
+  
+    <div class="container">
+      <div class="top">
+        <div class="react">
+          <div class="view"><i class="fa-solid fa-eye"></i><span></span> views &nbsp;</div>
+          <div class="like"><i class="fa-regular fa-heart"></i><span></span> love it</div>
+        </div>
+        <div class="cat">A Informational Design</div>
+      </div>
+      <div class="heading">THE POWERPUFF GENERATION</div>
+      <div class="item">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure soluta dolorem consequuntur, assumenda in vitae maiores dolor sint, fugit est adipisci tempora quidem illo? Voluptas.</p>
+        <img src="logo.png" alt="">
+        <img src="logo.png" alt="">
+        <img src="logo.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui voluptatibus expedita ut illum sunt unde eaque porro eius aliquid exercitationem quia voluptatem dicta ullam architecto autem.</p>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <p class="creator">
+            BY SUMIT DUARY
+          </p>
+          <div class="tags"> Tags:
+            <a href="#">INFORMATIONAL DESIGN
+            </a>
+            <a href="#">BRANDING DESIGN</a>
+            <a href="#">LAYOUT DESIGN</span></a>
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="navigation">
+        <div class="pre">&lArr; Previous</div>
+        <div class="nxt">Next &rArr;</div>
+      </div>
+      <hr>
+      <div class="rel-work">
+        <p class="rel-work-title">
+          RELATED WORKS
+        </p>
+        <div class="items">
+          <div class="project">
+            <img src="logo.png" alt="">
+            <p class="title">Title</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="project">
+            <img src="logo.png" alt="">
+            <p class="title">Title</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="project">
+            <img src="logo.png" alt="">
+            <p class="title">Title</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="project">
+            <img src="logo.png" alt="">
+            <p class="title">Title</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="cmt-box">
+        <h2>COMMENT BOX</h2>
+        <h6>LEAVE YOUR COMMENT</h6>
+        <form action="#" method="post">
+          <label for="name">
+            <p>NAME:</p>
+          </label>
+          <input type="text" name="name" id="name" placeholder="Enter your name here">
+          <label for="email">
+            <p>YOUR E-MAIL:</p>
+          </label>
+          <input type="email" name="email" id="email" placeholder="Enter your email id here">
+          <label for="msg">
+            <p>MESSAGE:</p>
+          </label>
+          <textarea name="msg" id="msg" cols="100" rows="5" placeholder="Your message goes here"></textarea>
+          <p>*Your email will display or publish nowhere</p>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+    </div>
+    <script>
+      $(".like span").text(Math.floor(Math.random() * 2000 + 200));
+      $(".view span").text(Math.floor(Math.random() * 2000 + parseInt($(".like span").text()) + 500));
+      $(document).ready(function () {
+        $(".fa-heart").click(function () {
+          $(this).css("color", "red")
+            $(".like span").text(parseInt($(".like span").text()) + 1)
+          })
+      })
+    </script>
+</body>
+
+</html>
